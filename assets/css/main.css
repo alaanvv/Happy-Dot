@@ -1,0 +1,140 @@
+/* COISAS QUE NÃO SEI O NOME */
+
+:root {
+    --main-bg: rgb(202, 172, 108);
+    --sec-bg: rgb(228, 131, 66);
+    --dot-color: rgb(255, 174, 0);
+    --anti-cor: rgb(139, 54, 209);
+
+    
+    font-size: 62.5%;
+    user-select: none;
+}
+
+@keyframes maluquice {
+    from {
+        transform: rotate(90deg);
+    } to {
+        transform: rotate(-270deg);
+    }
+}
+
+/* ELEMENTOS */
+
+body {
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+html {
+    overflow: hidden;
+}
+
+/* CLASSES */
+
+.space {
+    background-color: var(--sec-bg);
+    width: 82rem;
+    height: 58rem;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+}
+
+.pontos {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    position: absolute;
+    right: 48%;
+    bottom: 20%;
+    margin: 10px;
+}
+
+.ponto {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dot {
+    background-color: var(--dot-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 0;
+    z-index: 1;
+}
+
+.antidot {
+    background-color: var(--anti-cor);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all linear 500ms;
+    animation: maluquice linear 3s infinite;
+}
+
+.antidot p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dot2 {
+    height: 40px;
+    width: 40px;
+}
+
+.dot3 {
+    height: 25px;
+    width: 25px;
+}
+
+.dotgrade {
+    height: 37.5px;
+    width: 37.5px;
+}
+
+.inv {
+    visibility: hidden;
+}
+
+.vis {
+    visibility: visible;
+}
+
+.exorcista {
+    position: absolute;
+    width: 100%;
+    height: 110;
+    z-index: 3;
+}
+
+.recompensas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 20rem;
+}
+
+.ups {
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.up {
+    background-color: var(--main-bg);
+    padding: 1rem;
+    border-radius: 10px;
+}
