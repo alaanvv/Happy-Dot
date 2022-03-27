@@ -1,4 +1,4 @@
 # Happy-Dot
 
-Browser game
+Browser game <br>
 https://happy-dot.netlify.app
