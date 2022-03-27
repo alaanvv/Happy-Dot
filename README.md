@@ -1,2 +1,3 @@
 # Happy-Dot
-Browser game
+
+<a src="https://happy-dot.netlify.app">Browser game</a>
